@@ -1,0 +1,39 @@
+{
+  "name": "Recursion",
+  "synonyms": ["Recursive Methods"],
+  "text": "Recursion is when a method calls itself with a smaller instance of a problem",
+  "context": "Theoretical Computer Science",
+  "opposite": "Iteration",
+  "related": ["Method", "Instance", "Problem"],
+  "subProperties": {
+    "relatedPeople": [
+      {
+        "givenName": "Wilhelm",
+        "familyName": "Ackermann",
+        "birthDate": "1896-03-29",
+        "deathDate": "1962-12-24"
+      }
+    ],
+    "author": {
+      "givenName": "Max",
+      "familyName": "Mustermann"
+    },
+    "contributor": {
+      "givenName": "Maximilian",
+      "familyName": "Mustermaennchen"
+    },
+    "comments": [
+      {
+        "author": {
+          "givenName": "Max",
+          "familyName": "Musterfrau",
+          "text": "Thanks for the explanation.",
+          "downvoteCount": 0,
+          "upvoteCount": 3
+        }
+      }
+    ],
+    "dateCreated": "2016-06-03",
+    "dateModified": "2016-06-04"
+  }
+}

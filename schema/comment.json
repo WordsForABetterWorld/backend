@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "comment",
+  "properties": {
+    "author": {
+      "type": "person"
+    },
+    "text": {
+      "type": "string"
+    },
+    "downvoteCount": {
+      "type": "integer"
+    },
+    "upvoteCount": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "givenName",
+    "familyName",
+    "text"
+  ]
+}

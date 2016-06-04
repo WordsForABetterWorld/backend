@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "word",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "synonyms": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "text": {
+      "type": "string"
+    },
+    "context": {
+      "type": "string"
+    },
+    "opposite": {
+      "type": "string"
+    },
+    "related": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "author": {
+      "type": "person"
+    },
+    "dateCreated": {
+      "type": "date_string"
+    },
+    "dateModified": {
+      "type": "date_string"
+    },
+    "subProperties": {
+      "type": "object",
+      "properties": {
+        "relatedPeople": {
+          "type": "array",
+          "items": {
+            "type": "person"
+          }
+        },
+        "contributor": {
+          "type": "person"
+        },
+        "comments": {
+          "type": "array",
+          "items": {
+            "type": "comment"
+          }
+        },
+
+      }
+    }
+  },
+  "required": [
+    "name",
+    "text",
+    "context",
+    "subProperties",
+    "author",
+    "dateCreated"
+  ]
+}

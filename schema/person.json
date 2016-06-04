@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "person",
+  "properties": {
+    "givenName": {
+      "type": "string"
+    },
+    "familyName": {
+      "type": "string"
+    },
+    "birthDate": {
+      "type": "date_string"
+    },
+    "deathDate": {
+      "type": "date_string"
+    }
+  },
+  "required": [
+    "familyName"
+  ]
+}

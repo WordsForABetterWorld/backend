@@ -1,23 +1,26 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "type": "comment",
+  "title": "comment",
+  "id": "comment.json",
   "properties": {
     "author": {
-      "type": "person"
+      "$ref": "person.json",
+      "description": "The person that created this comment"
     },
     "text": {
       "type": "string"
     },
     "downvoteCount": {
-      "type": "integer"
+      "type": "integer",
+      "description": "A counter for downrates/downvotes of a comment"
     },
     "upvoteCount": {
-      "type": "integer"
+      "type": "integer",
+      "description": "A counter for uprates/upvotes of a comment"
     }
   },
   "required": [
-    "givenName",
-    "familyName",
+    "author",
     "text"
   ]
 }

@@ -1,59 +1,72 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "type": "word",
+  "title": "word",
+  "id": "word.json",
+  "description": "An article about a word, that explains its meaning",
   "properties": {
     "name": {
-      "type": "string"
+      "$ref": "primitives.json/types/name"
     },
-    "synonyms": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "text": {
-      "type": "string"
+    "description": {
+      "$ref": "primitives.json/types/description"
     },
     "context": {
-      "type": "string"
-    },
-    "opposite": {
-      "type": "string"
-    },
-    "related": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
+      "$ref": "word_ref.json",
+      "description": "A reference of a word that describes the category or context the item/object belongs to"
     },
     "author": {
-      "type": "person"
+      "$ref": "person.json",
+      "description": "The person that created this word"
     },
     "dateCreated": {
-      "type": "date_string"
+      "$ref": "primitives.json/types/date_string"
     },
-    "dateModified": {
-      "type": "date_string"
+    "uid": {
+      "$ref": "primitives.json/types/uid"
     },
     "subProperties": {
       "type": "object",
       "properties": {
+        "opposite": {
+          "$ref": "word_ref.json",
+          "description": "A reference of a word that is opposed to this word."
+        },
+        "related": {
+          "type": "array",
+          "items": {
+            "$ref": "word_ref.json",
+            "description": "A reference of a word related to this one. Maybe it is essential to understand this word."
+          }
+        },
+        "synonyms": {
+          "type": "array",
+          "items": {
+            "$ref": "primitives.json/types/synonym"
+          }
+        },
         "relatedPeople": {
           "type": "array",
           "items": {
-            "type": "person"
+            "$ref": "person.json",
+            "description": "Person that is related to the word. This can be the creator of the word, or someone that is connected with it in any way."
           }
         },
         "contributor": {
-          "type": "person"
+          "$ref": "person.json",
+          "description": "A secondary contributor or author of the word"
         },
         "comments": {
           "type": "array",
           "items": {
-            "type": "comment"
+            "$ref": "comment.json"
           }
         },
-
+        "dateModified": {
+          "$ref": "primitives.json/types/date_string"
+        },
+        "inLanguage": {
+          "$ref": "primitives.json/types/language"
+        }
       }
     }
   },
@@ -61,8 +74,8 @@
     "name",
     "text",
     "context",
-    "subProperties",
     "author",
-    "dateCreated"
+    "dateCreated",
+    "uid"
   ]
 }

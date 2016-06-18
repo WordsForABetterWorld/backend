@@ -1,6 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "type": "person",
+  "title": "person",
+  "id": "person.json",
   "properties": {
     "givenName": {
       "type": "string"
@@ -9,10 +10,10 @@
       "type": "string"
     },
     "birthDate": {
-      "type": "date_string"
+      "$ref": "primitives.json/types/date_string"
     },
     "deathDate": {
-      "type": "date_string"
+      "$ref": "primitives.json/types/date_string"
     }
   },
   "required": [

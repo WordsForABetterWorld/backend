@@ -1,39 +1,74 @@
-{
-  "name": "Recursion",
-  "synonyms": ["Recursive Methods"],
-  "text": "Recursion is when a method calls itself with a smaller instance of a problem",
-  "context": "Theoretical Computer Science",
-  "opposite": "Iteration",
-  "related": ["Method", "Instance", "Problem"],
-  "subProperties": {
-    "relatedPeople": [
-      {
-        "givenName": "Wilhelm",
-        "familyName": "Ackermann",
-        "birthDate": "1896-03-29",
-        "deathDate": "1962-12-24"
-      }
-    ],
+[
+  {
+    "name": "Recursion",
+    "description": "Recursion is when a method calls itself with a smaller instance of a problem",
+    "context": "Theoretical Computer Science",
     "author": {
       "givenName": "Max",
       "familyName": "Mustermann"
     },
-    "contributor": {
-      "givenName": "Maximilian",
-      "familyName": "Mustermaennchen"
-    },
-    "comments": [
-      {
-        "author": {
-          "givenName": "Max",
-          "familyName": "Musterfrau",
-          "text": "Thanks for the explanation.",
-          "downvoteCount": 0,
-          "upvoteCount": 3
-        }
-      }
-    ],
     "dateCreated": "2016-06-03",
-    "dateModified": "2016-06-04"
+    "subProperties": {
+      "opposite": "Iteration",
+      "related": [
+        "Method",
+        "Instance",
+        "Problem"
+      ],
+      "synonyms": [
+        "Recursive Methods"
+      ],
+      "relatedPeople": [
+        {
+          "givenName": "Wilhelm",
+          "familyName": "Ackermann",
+          "birthDate": "1896-03-29",
+          "deathDate": "1962-12-24"
+        }
+      ],
+      "contributor": {
+        "givenName": "Maximilian",
+        "familyName": "Mustermaennchen"
+      },
+      "comments": [
+        {
+          "author": {
+            "givenName": "Max",
+            "familyName": "Musterfrau",
+            "text": "Thanks for the explanation.",
+            "downvoteCount": 0,
+            "upvoteCount": 3
+          }
+        }
+      ],
+      "dateModified": "2016-06-04",
+      "inLanguage": "en"
+    }
+  },
+  {
+    "name": "Basisrelation",
+    "description": "Eine Basisrelation ist ein relation die permanent in einem DBMS gespeichert ist. Sie muss nicht berechnet werden.",
+    "context": "Datenbanksysteme",
+    "author": {
+      "givenName": "Max",
+      "familyName": "Musterfrau",
+      "birthDate": "1994-03-25"
+    },
+    "dateCreated": "2016-06-06",
+    "subProperties": {
+      "opposite": "Abgeleitete Relation",
+      "related": [
+        "Relation",
+        "Datenbanksystem",
+        "Relationaler Entwurf",
+      ],
+      "synonyms": [
+        "Eigentliche Relation",
+        "Gespeicherte Tabelle",
+      ],
+      "comments": [],
+      "dateModified": "2016-06-07",
+      "inLanguage": "de"
+    }
   }
-}
+]

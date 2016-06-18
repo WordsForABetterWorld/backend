@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "primitives",
+  "id": "primitives.json",
+  "types": {
+    "name": {
+      "type": "string",
+      "description": "The name of the item/object"
+    },
+    "description": {
+      "type": "string",
+      "description": "The description of the item/object"
+    },
+    "uid": {
+      "type": "string",
+      "description": "unique identifer"
+    },
+    "synonym": {
+      "type": "string",
+      "description": "A word with the same meaning"
+    },
+    "date_string": {
+      "type": "string",
+      "description": "ISO 8601 date format"
+    },
+    "language": {
+      "type": "string",
+      "description": "Language code. Typically from the IETF BCP 47 standard"
+    }
+  }
+}

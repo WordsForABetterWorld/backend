@@ -4,7 +4,7 @@ var config = require('config');
 
 /* GET config */
 router.get('/', function(req, res, next) {
-  res.json(config);
+  res.status(200).json(config.public);
 });
 
 module.exports = router;

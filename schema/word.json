@@ -5,10 +5,10 @@
   "description": "An article about a word, that explains its meaning",
   "properties": {
     "name": {
-      "$ref": "primitives.json/types/name"
+      "$ref": "name.json"
     },
     "description": {
-      "$ref": "primitives.json/types/description"
+      "$ref": "description.json"
     },
     "context": {
       "$ref": "word_ref.json",
@@ -19,10 +19,10 @@
       "description": "The person that created this word"
     },
     "dateCreated": {
-      "$ref": "primitives.json/types/date_string"
+      "$ref": "date_string.json"
     },
     "uid": {
-      "$ref": "primitives.json/types/uid"
+      "$ref": "uid.json"
     },
     "subProperties": {
       "type": "object",
@@ -41,7 +41,7 @@
         "synonyms": {
           "type": "array",
           "items": {
-            "$ref": "primitives.json/types/synonym"
+            "$ref": "synonym.json"
           }
         },
         "relatedPeople": {
@@ -62,17 +62,17 @@
           }
         },
         "dateModified": {
-          "$ref": "primitives.json/types/date_string"
+          "$ref": "date_string.json"
         },
         "inLanguage": {
-          "$ref": "primitives.json/types/language"
+          "$ref": "language.json"
         }
       }
     }
   },
   "required": [
     "name",
-    "text",
+    "description",
     "context",
     "author",
     "dateCreated",

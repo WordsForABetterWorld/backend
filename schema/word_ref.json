@@ -5,10 +5,14 @@
   "description": "A unique reference to a word",
   "properties": {
     "name": {
-      "$ref": "primitives.json/types/name"
+      "$ref": "primitives.json#/definitions/name"
     },
     "uid": {
-      "$ref": "primitives.json/types/uid"
+      "$ref": "primitives.json#/definitions/uid"
+    },
+    "refUid":{
+      "$ref": "primitives.json#/definitions/uid",
+      "description": "the uid of the word it references"
     }
   },
   "required": [

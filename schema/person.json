@@ -3,6 +3,9 @@
   "title": "person",
   "id": "person.json",
   "properties": {
+    "uid":{
+      "$ref": "uid.json"
+    },
     "givenName": {
       "type": "string"
     },
@@ -10,10 +13,10 @@
       "type": "string"
     },
     "birthDate": {
-      "$ref": "primitives.json/types/date_string"
+      "$ref": "date_string.json"
     },
     "deathDate": {
-      "$ref": "primitives.json/types/date_string"
+      "$ref": "date_string.json"
     }
   },
   "required": [

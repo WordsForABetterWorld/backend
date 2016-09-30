@@ -3,6 +3,9 @@
   "title": "comment",
   "id": "comment.json",
   "properties": {
+    "uid":{
+      "$ref": "uid.json"
+    },
     "author": {
       "$ref": "person.json",
       "description": "The person that created this comment"

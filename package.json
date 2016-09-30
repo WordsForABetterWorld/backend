@@ -12,8 +12,10 @@
     "cookie-parser": "~1.4.3",
     "debug": "~2.2.0",
     "express": "~4.13.4",
+    "jsonschema": "^1.1.0",
     "mocha": "^2.5.3",
     "request": "^2.72.0",
+    "serve-index": "^1.8.0",
     "supertest": "^1.2.0"
   }
 }

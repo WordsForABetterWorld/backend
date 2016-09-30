@@ -3,6 +3,7 @@ var path = require('path');
 var logger = require('morgan');
 var bodyParser = require('body-parser');
 var indexRoute = require('./routes/index');
+var validateRoute = require('./routes/schema-validation');
 var serveIndex = require('serve-index');
 
 var app = express();
@@ -19,6 +20,7 @@ app.use('/schema/', serveIndex(__dirname + '/schema'));
 
 
 app.use('/', indexRoute);
+app.post('/validate/', validateRoute);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

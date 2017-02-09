@@ -1,0 +1,28 @@
+{
+  "name": "Basisrelation",
+  "description": "Eine Basisrelation ist ein relation die permanent in einem DBMS gespeichert ist. Sie muss nicht berechnet werden.",
+  "context": "Datenbanksysteme",
+  "type": "word",
+  "uid": "c42284251a000b7f5c0211336357e945f5acf322",
+  "author": {
+    "givenName": "Max",
+    "familyName": "Musterfrau",
+    "birthDate": "1994-03-25"
+  },
+  "dateCreated": "2016-06-06",
+  "subProperties": {
+    "opposite": "Abgeleitete Relation",
+    "related": [
+      "Relation",
+      "Datenbanksystem",
+      "Relationaler Entwurf"
+    ],
+    "synonyms": [
+      "Eigentliche Relation",
+      "Gespeicherte Tabelle"
+    ],
+    "comments": [],
+    "dateModified": "2016-06-07",
+    "inLanguage": "de"
+  }
+}
